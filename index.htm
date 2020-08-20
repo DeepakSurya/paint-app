@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="toolbox left">
+    
+
+
+   
+
+        <div class="group shapes">
+            <div class="item " data-tool="line">
+                <img src="images/line.png">
+            </div>
+            <div class="item" data-tool="rectangle">
+                <img src="images/rectangle.png">
+            </div>
+            <div class="item" data-tool="circle"> 
+                <img src="images/circle.png">
+            </div>
+
+
+
+  
+
+        </div>
+
+        <div class="group tools">
+            <div class="item active" data-tool="pencil">
+                <img src="images/pencil.png">
+            </div>
+            <div class="item" data-tool="brush">
+                <img src="images/brush.png">
+            </div>
+
+            <div class="item" data-tool="eraser">
+                <img src="images/eraser.png">
+            </div>
+
+            
+
+
+        </div>
+        <div class="group linewidth for-shape" style="display: none;">
+            
+            <div class="item active" data-line-width="1">
+                <img src="images/dot.png" style="width: 1px; height: 1px; padding: 10px; ">
+            </div>
+            <div  class="item" data-line-width="2">
+                <img src="images/dot.png" style="width: 2px; height: 2px; padding: 10px; ">
+            </div>
+            <div class="item" data-line-width="3">
+                <img src="images/dot.png" style="width: 3px; height: 3px; padding: 10px;  ">
+            </div>
+            <div   class="item" data-line-width="4">
+                <img src="images/dot.png" style="width: 4px; height: 4px; padding: 10px; ">
+            </div>
+            <div   class="item" data-line-width="5"> 
+                <img src="images/dot.png" style="width: 5px; height: 5px; padding: 10px;">
+            </div>
+
+        </div>
+
+        <div class="group linewidth for-brush" style="display: none;">
+            
+            <div class="item active" data-brush-size="4">
+                <img src="images/dot.png" style="width: 4px; height: 4px; padding: 10px; ">
+            </div>
+            <div  class="item" data-brush-size="6">
+                <img src="images/dot.png" style="width: 6px; height: 6px; padding: 10px; ">
+            </div>
+            <div class="item" data-brush-size="8">
+                <img src="images/dot.png" style="width: 8px; height: 8px; padding: 10px;  ">
+            </div>
+            <div   class="item" data-brush-size="10">
+                <img src="images/dot.png" style="width: 10px; height: 10px; padding: 10px; ">
+            </div>
+            <div   class="item" data-brush-size="12"> 
+                <img src="images/dot.png" style="width: 12px; height: 12px; padding: 10px;">
+            </div>
+
+        </div>
+ 
+
+    </div>
+
+  
+            
+        
+    <canvas id="canvas" width="1140" height="780">
+
+    </canvas>
+
+    <div class="toolbox right">
+        <div class="group swatches">
+            <div class="item" data-color="#ffffff">
+                <div class="swatch" style="background-color: #ffffff;">
+
+                </div>
+            </div>
+            <div class="item active" data-color="black">
+                <div class="swatch " style="background-color: black;">
+
+                </div>
+            </div>
+            <div class="item" data-color="red">
+                <div class="swatch" style="background-color: red;">
+
+                </div>
+            </div>
+            <div class="item" data-color="green">
+                <div class="swatch" style="background-color: green;">
+
+                </div>
+            </div>
+            <div class="item" data-color="blue">
+                <div class="swatch" style="background-color: blue;">
+
+                </div>
+            </div>
+            <div class="item " data-color="purple">
+                <div class="swatch" style="background-color: purple;">
+
+                </div>
+            </div>
+            <div class="item" data-color="rgb(243, 22, 214)">
+                <div class="swatch" style="background-color: rgb(243, 22, 214);">
+
+                </div>
+            </div>
+            <div class="item" data-color="yellow">
+                <div class="swatch" style="background-color: yellow;">
+
+                </div>
+            </div>
+            <div class="item" data-color="orange">
+                <div class="swatch" style="background-color: orange;">
+
+                </div>
+            </div>
+            <div class="item" data-color="navy">
+                <div class="swatch" style="background-color: navy;">
+
+                </div>
+            </div>
+            <div class="item" data-color="#0abaff">
+                <div class="swatch" style="background-color: #0abaff;">
+
+                </div>
+            </div>
+            <div class="item" data-color="#524c4c">
+                <div class="swatch" style="background-color: #524c4c;">
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+<script src="app.js" type="module"></script>
+
+</html>
